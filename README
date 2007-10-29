@@ -1,0 +1,73 @@
+Vapour Liquid Equilibrium using Java
+----------------------------------
+Ver 0.1
+
+
+* What is it?
+  -----------
+
+VLE is a program written in java to simulate the thermodynamic systems
+containing liquid and vapour. It can determine various system properties
+like bubble point, dew point, etc. It is designed to be cross-platform
+compatible and extendable.
+
+Checkout VLE homepage at http://vle-java.sourceforge.net
+
+
+
+* Features
+  --------
+
+- Written in pure java and should run on platforms supported by java.
+
+- Supports BUBL P, BUBL T, DEW P, DEW T, Flash point, Pxy diagrams and
+  Txy diagrams.
+
+- Various methods for calculations available:
+    o Margule's equations and VanLaar equations for activity coefficient
+      calculations.
+    o Virial equation and Redlich-Kwong equation for fugacity coefficient
+      calculations.
+    o Adding user defined methods for calculations is possible. Just
+      implement the proper interface and add the class name to appropriate
+      properties file. As simple as that.
+
+- Localization support. Resource bundles are used, and anyone can
+  easily localize the application without the need of recompile. Just
+  make sure that the properties files are UTF-8 encoded.
+
+
+* To Do
+  -----
+
+- NRTL, UNIQUAC, UNIFAC methods will be added for activity calculations.
+
+- Peng-Robinson equation will be added for fugacity calculations.
+
+- Ensure proper translation of the application in Japanese language.
+
+
+* License
+  -------
+
+This application is released under GNU General Public License (GPL).
+You should have received a copy of the license with this application.
+If not, please refer to http://www.gnu.org/copyleft/gpl.html.
+
+
+* Acknowledgements
+  ----------------
+
+- Richard Osbaldeston's BMP Library is used by this application for generating
+  BMP outputs for the graphs. Please visit http://www.rosbaldeston.freeserve.co.uk/java/bmp/index.html
+  for more details.
+
+- J. David Eisenberg's PNG encoder library is used for generating PNG outputs.
+  Please visit http://catcode.com/pngencoder/index.html for more details.
+
+
+* Contact
+  -------
+
+Author: Samir Vaidya (syvaidya@yahoo.com)
+Copyright (c) Samir Vaidya
