@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<project name="vle-java" default="core" basedir=".">
+
+  <property name="src" value="."/>
+  <property name="build" value="../build"/>
+  <property name="build.classesdir" value="${build}/classes"/>
+  <property name="build.classpath" value="${src};${src}/../lib/bmplib.jar;${src}/../lib/pnglib.jar"/>
+
+  <target name="core" depends="clean">
+    <mkdir dir="${build.classesdir}"/>
+    <javac srcdir="${src}"
+           destdir="${build.classesdir}"
+           classpath="${build.classpath}"/>
+    <native2ascii encoding="UTF-8" src="${src}/net/sourceforge/vlejava/message"
+		dest="${build.classesdir}/net/sourceforge/vlejava/message" includes="**/*.properties"/>
+    <jar jarfile="${src}/../lib/VLE.jar" basedir="${build.classesdir}"/>
+  </target>
+
+  <target name="clean">
+    <delete dir="${build}"/>
+  </target>
+
+</project>
