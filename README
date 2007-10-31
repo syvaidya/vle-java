@@ -1,6 +1,6 @@
 Vapour Liquid Equilibrium using Java
 ----------------------------------
-Ver 0.1
+Ver 0.2
 
 
 * What is it?
@@ -26,8 +26,8 @@ Checkout VLE homepage at http://vle-java.sourceforge.net
 - Various methods for calculations available:
     o Margule's equations and VanLaar equations for activity coefficient
       calculations.
-    o Virial equation and Redlich-Kwong equation for fugacity coefficient
-      calculations.
+    o Virial equation, Redlich-Kwong equation and Peng-Robinson equation
+      for fugacity coefficient calculations.
     o Adding user defined methods for calculations is possible. Just
       implement the proper interface and add the class name to appropriate
       properties file. As simple as that.
@@ -41,8 +41,6 @@ Checkout VLE homepage at http://vle-java.sourceforge.net
   -----
 
 - NRTL, UNIQUAC, UNIFAC methods will be added for activity calculations.
-
-- Peng-Robinson equation will be added for fugacity calculations.
 
 - Ensure proper translation of the application in Japanese language.
 
@@ -69,5 +67,5 @@ If not, please refer to http://www.gnu.org/copyleft/gpl.html.
 * Contact
   -------
 
-Author: Samir Vaidya (syvaidya@yahoo.com)
+Author: Samir Vaidya (syvaidya@gmail.com)
 Copyright (c) Samir Vaidya
