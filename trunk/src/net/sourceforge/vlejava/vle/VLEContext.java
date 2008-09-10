@@ -49,7 +49,7 @@ public class VLEContext
         int count = 0;
         String propName = null;
         String value = null;
-        Enumeration enum = null;
+        Enumeration enumeration = null;
         Properties props = new Properties();
 
         try
@@ -62,11 +62,11 @@ public class VLEContext
             System.exit(2);
         }
 
-        enum = props.propertyNames();
+        enumeration = props.propertyNames();
 
-        while (enum.hasMoreElements())
+        while (enumeration.hasMoreElements())
         {
-            propName = (String) enum.nextElement();
+            propName = (String) enumeration.nextElement();
             value = (String) props.get(propName);
 
             list.add(value);
